@@ -151,7 +151,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 export const BLOG_POSTS: BlogPost[] = [
   {
     title: 'AI Pipelines Beyond the Model: Designing Workflows That Actually Scale in the Real World',
-    description: 'The model is just the beginning. Discover why production AI systems fail more often from pipeline design than model accuracy, and how to build workflows that handle real-world complexity.',
+    description: 'Production AI systems fail more often from pipeline design than model accuracy. Learn how to build workflows that handle real-world complexity.',
     link: '/blog/ai-pipelines-beyond-model',
     uid: 'blog-11',
     hasTOC: true,
@@ -159,7 +159,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     title: 'Concurrency as Craft: Why Resilient Systems Depend on More Than Just Faster Threads',
-    description: 'More threads don\'t make better systems. Learn the art of designing concurrent systems that dance gracefully under load through thoughtful patterns, not brute force.',
+    description: 'Learn the art of designing concurrent systems that dance gracefully under load through thoughtful patterns, not brute force.',
     link: '/blog/concurrency-as-craft-resilient-systems',
     uid: 'blog-10',
     hasTOC: true,
@@ -167,7 +167,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     title: 'Throughput vs. Latency: Rethinking API Performance as a Design Tradeoff, Not Just a Metric',
-    description: 'Performance isn\'t a single dimension. Uncover how throughput and latency represent fundamental design choices that shape your system architecture and user experience.',
+    description: 'See how throughput and latency represent fundamental design choices that shape your system architecture and user experience.',
     link: '/blog/throughput-vs-latency-api-performance',
     uid: 'blog-9',
     hasTOC: true,
@@ -175,7 +175,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     title: 'System Design Meets Human Design: Lessons from Scaling APIs and Scaling Usability',
-    description: 'APIs and user flows face the same scaling challenges. Discover how the principles that make systems resilient also make interfaces more usable and accessible.',
+    description: 'Discover how the principles that make systems resilient also make interfaces more usable and accessible.',
     link: '/blog/system-design-meets-human-design',
     uid: 'blog-8',
     hasTOC: true,
@@ -199,7 +199,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     title: 'The First Hurdle: User Onboarding and Retention in Digital Platforms',
-    description: 'Getting users to sign up is just the beginning. Dive into the psychology behind user onboarding and discover patterns that dramatically improve retention rates.',
+    description: 'Dive into the psychology behind user onboarding and discover patterns that dramatically improve retention rates.',
     link: '/blog/the-first-hurdle-user-onboarding-and-retention',
     uid: 'blog-5',
     hasTOC: true,

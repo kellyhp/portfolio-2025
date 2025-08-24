@@ -7,11 +7,15 @@ import { ThemeProvider } from 'next-themes'
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#ffffff',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#0a0a0a' }
+  ],
+  colorScheme: 'light dark',
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://aboutkellyphan.art/'),
+  metadataBase: new URL('https://www.kellyphan.dev/'),
   alternates: {
     canonical: '/'
   },
@@ -19,7 +23,68 @@ export const metadata: Metadata = {
     default: 'Kelly Phan - Personal Website',
     template: '%s | Kelly Phan'
   },
-  description:  'Just a personal website.',
+  description: 'Kelly Phan is a Software Engineer and UI/UX Designer passionate about building scalable systems and creating intuitive user experiences. Explore my projects, blog posts, and professional journey.',
+  keywords: [
+    'Kelly Phan',
+    'Software Engineer',
+    'UI/UX Designer',
+    'Full Stack Developer',
+    'React Developer',
+    'Next.js Developer',
+    'System Design',
+    'AI Pipelines',
+    'Web Development',
+    'Portfolio'
+  ],
+  authors: [{ name: 'Kelly Phan' }],
+  creator: 'Kelly Phan',
+  publisher: 'Kelly Phan',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.kellyphan.dev/',
+    siteName: 'Kelly Phan - Portfolio',
+    title: 'Kelly Phan - Software Engineer & UI/UX Designer',
+    description: 'Kelly Phan is a Software Engineer and UI/UX Designer passionate about building scalable systems and creating intuitive user experiences.',
+    images: [
+      {
+        url: '/assets/portfolio-preview.png',
+        width: 1200,
+        height: 630,
+        alt: 'Kelly Phan - Software Engineer & UI/UX Designer',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Kelly Phan - Software Engineer & UI/UX Designer',
+    description: 'Kelly Phan is a Software Engineer and UI/UX Designer passionate about building scalable systems and creating intuitive user experiences.',
+    images: ['/assets/portfolio-preview.png'],
+    creator: '@kellyphan',
+    site: '@kellyphan',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  category: 'technology',
+  classification: 'portfolio',
+  other: {
+    'msapplication-TileColor': '#00ff88',
+    'theme-color': '#00ff88',
+  },
 };
 
 const geist = Geist({
